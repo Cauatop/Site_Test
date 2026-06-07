@@ -1,17 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Minha Página</title>
+<meta charset="UTF-8">
+<title>Quiz da Thalia</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.quiz{
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.opcao{
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.opcao:hover{
+    background: #f0f0f0;
+    border-color: #888;
+}
+</style>
 </head>
 <body>
 
-    <h1>Olá, Mundo!</h1>
-    <p>Este é um HTML simples.</p>
+<div class="quiz">
+    <h2>Pergunta 1: Qual o dia do aniversário da Thalia?</h2>
 
-    <button onclick="alert('Botão clicado!')">
-        Clique aqui
-    </button>
+    <label class="opcao">
+        <input type="radio" name="pergunta1">
+        A) 26/04
+    </label>
+
+    <label class="opcao">
+        <input type="radio" name="pergunta1">
+        B) 05/12
+    </label>
+
+    <label class="opcao">
+        <input type="radio" name="pergunta1">
+        C) 04/09
+    </label>
+
+    <label class="opcao">
+        <input type="radio" name="pergunta1">
+        D) 10/08
+    </label>
+
+    <label class="opcao">
+        <input type="radio" name="pergunta1">
+        E) 22/12
+    </label>
+</div>
 
 </body>
 </html>
